@@ -1,0 +1,11 @@
+#!/bin/bash
+
+path=$(find ~/Projects -mindepth 1 -maxdepth 2 -type d 2> /dev/null | fzf)
+session_name=$(basename "$path" | tr . _)
+
+if ! tmux has-hession -t "$session_name" 2> /dev/null; then
+  tmux new-session -s "$session_name" -c "$path" -d
+fi
+
+tmux switch-client -t "$session_name"
+
