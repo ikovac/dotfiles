@@ -48,83 +48,6 @@
                         ]
                     },
                     {
-                        "description": "Map caps lock plus h/j/k/l to Arrows",
-                        "manipulators": [
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "arrows_mode",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "h"
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "left_arrow"
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "arrows_mode",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "j"
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "down_arrow"
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "arrows_mode",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "k"
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "up_arrow"
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "arrows_mode",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "l"
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "right_arrow"
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
                         "description": "Launch apps by right command+letters.",
                         "manipulators": [
                             {
@@ -294,6 +217,83 @@
                                 "to": [
                                     {
                                         "shell_command": "open -a 'Maccy.app'"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Map caps lock plus h/j/k/l to Arrows",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "arrows_mode",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "h"
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "left_arrow"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "arrows_mode",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "j"
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "down_arrow"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "arrows_mode",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "k"
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "up_arrow"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "arrows_mode",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "l"
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "right_arrow"
                                     }
                                 ],
                                 "type": "basic"

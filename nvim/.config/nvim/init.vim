@@ -31,8 +31,8 @@ call plug#begin()
   Plug 'arcticicestudio/nord-vim'
   Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
   Plug 'junegunn/fzf.vim'
+  Plug 'mhinz/vim-signify'
 call plug#end()
 
 let g:nord_italic = 1
 colorscheme nord
-
