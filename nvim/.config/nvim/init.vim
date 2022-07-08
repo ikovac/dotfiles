@@ -16,6 +16,7 @@ set updatetime=100
 set smartcase
 set nowrap
 set cc=80 
+set signcolumn=yes
 
 noremap <C-l> <C-w>l
 noremap <C-h> <C-w>h
@@ -27,11 +28,13 @@ nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
 
 call plug#begin()
+  Plug 'neoclide/coc.nvim', {'branch': 'release'}
   Plug 'preservim/nerdtree'
   Plug 'arcticicestudio/nord-vim'
   Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
   Plug 'junegunn/fzf.vim'
   Plug 'mhinz/vim-signify'
+  Plug 'tpope/vim-commentary'
 call plug#end()
 
 let g:nord_italic = 1

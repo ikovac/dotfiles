@@ -1,0 +1,6 @@
+{
+  "eslint.autoFixOnSave": true,
+  "eslint.run": "onSave",
+  "suggest.autoTrigger": "always",
+  "typescript.preferences.importModuleSpecifier": "non-relative"
+}
