@@ -1,5 +1,4 @@
 export PATH=$HOME/.local/bin:$PATH
 
 export DOTFILES=$HOME/dotfiles
-export STOW_FOLDERS="zsh,tmux,karabiner,nvim,bin"
-
+export STOW_FOLDERS="zsh,tmux,karabiner,nvim,bin,coc"
