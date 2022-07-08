@@ -26,6 +26,7 @@ nnoremap <leader>p :GFiles<CR>
 nnoremap <C-p> :Files<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
+nnoremap <leader><CR> :so ~/.config/nvim/init.vim<CR>
 
 call plug#begin()
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
