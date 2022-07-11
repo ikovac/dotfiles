@@ -1,6 +1,6 @@
 {
   "eslint.autoFixOnSave": true,
-  "eslint.run": "onSave",
+  "eslint.run": "onType",
   "suggest.autoTrigger": "always",
-  "typescript.preferences.importModuleSpecifier": "non-relative"
+  "diagnostic.maxWindowHeight": 900
 }
