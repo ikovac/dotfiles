@@ -66,6 +66,7 @@ call plug#begin()
   Plug 'junegunn/fzf.vim'
   Plug 'mhinz/vim-signify'
   Plug 'tpope/vim-commentary'
+  Plug 'mattn/emmet-vim'
 call plug#end()
 
 let g:nord_italic = 1
