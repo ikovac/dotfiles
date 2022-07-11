@@ -8,7 +8,6 @@ set expandtab
 set shiftwidth=2
 set tabstop=2
 set clipboard=unnamedplus
-set termguicolors
 set background=dark
 set scrolloff=8
 set ignorecase
