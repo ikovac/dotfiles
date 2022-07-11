@@ -3,6 +3,11 @@
 path=$(find ~/Projects -mindepth 1 -maxdepth 2 -type d 2> /dev/null | fzf)
 session_name=$(basename "$path" | tr . _)
 
+if [[ -z $TMUX ]] && [[ -z $tmux_running ]]; then
+  tmux new-session -s $session_name -c $path
+  exit 0
+fi
+
 if ! tmux has-hession -t "$session_name" 2> /dev/null; then
   tmux new-session -s "$session_name" -c "$path" -d
 fi
