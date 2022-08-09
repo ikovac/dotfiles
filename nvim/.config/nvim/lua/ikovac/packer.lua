@@ -32,4 +32,6 @@ return require('packer').startup(function(use)
     run = ':TSUpdate'
   })
   use 'jose-elias-alvarez/null-ls.nvim'
+  -- Status line
+  use('nvim-lualine/lualine.nvim', { opt = true })
 end)
