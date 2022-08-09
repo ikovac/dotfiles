@@ -1,6 +1,0 @@
-{
-  "eslint.autoFixOnSave": true,
-  "eslint.run": "onType",
-  "suggest.autoTrigger": "always",
-  "diagnostic.maxWindowHeight": 900
-}
