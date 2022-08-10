@@ -1,7 +1,7 @@
 export PATH=$HOME/.local/bin:$PATH
 
 export DOTFILES=$HOME/dotfiles
-export STOW_FOLDERS="zsh,tmux,karabiner,nvim,bin,coc"
+export STOW_FOLDERS="zsh,tmux,karabiner,nvim,bin,kitty"
 
 bindkey -v
 export KEYTIMEOUT=1
