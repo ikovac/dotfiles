@@ -112,3 +112,5 @@ alias npmrc="npm run dev:client"
 
 set -o vi
 
+# Use starship shell prompt
+eval "$(starship init zsh)"
