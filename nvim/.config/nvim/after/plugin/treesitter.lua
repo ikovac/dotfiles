@@ -1,17 +1,38 @@
-require('nvim-treesitter.configs').setup({
-  ensure_installed = 'all',
-  -- Install parsers synchronously (only applied to `ensure_installed`)
-  sync_install = false,
-  -- Automatically install missing parsers when entering buffer
-  auto_install = true,
-  -- phpdoc throws error for arm64
-  ignore_install = { 'phpdoc' },
-  highlight = {
-    enable = true,
-    -- Setting this to true will run `:h syntax` and tree-sitter at the same time.
-    -- Set this to `true` if you depend on 'syntax' being enabled (like for indentation).
-    -- Using this option may slow down your editor, and you may see some duplicate highlights.
-    -- Instead of true it can also be a list of languages
-    additional_vim_regex_highlighting = false,
-  },
+local status, treesitter = pcall(require, "nvim-treesitter.configs")
+if not status then
+	return
+end
+
+treesitter.setup({
+	-- enable syntax highlighting
+	highlight = {
+		enable = true,
+		additional_vim_regex_highlighting = false,
+	},
+	-- enable indentation
+	indent = { enable = true },
+	-- enable autotagging (w/ nvim-ts-autotag plugin)
+	autotag = { enable = true },
+	-- ensure these language parsers are installed
+	ensure_installed = {
+		"astro",
+		"json",
+		"javascript",
+		"typescript",
+		"tsx",
+		"yaml",
+		"html",
+		"css",
+		"scss",
+		"markdown",
+		"bash",
+		"lua",
+		"vim",
+		"vue",
+		"dockerfile",
+		"gitignore",
+		"rust",
+	},
+	-- auto install above language parsers
+	auto_install = true,
 })
