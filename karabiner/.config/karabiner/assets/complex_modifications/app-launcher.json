@@ -9,12 +9,8 @@
           "from": {
             "key_code": "b",
             "modifiers": {
-              "mandatory": [
-                "right_command"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
+              "mandatory": ["right_command"],
+              "optional": ["caps_lock"]
             }
           },
           "to": [
@@ -28,12 +24,8 @@
           "from": {
             "key_code": "t",
             "modifiers": {
-              "mandatory": [
-                "right_command"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
+              "mandatory": ["right_command"],
+              "optional": ["caps_lock"]
             }
           },
           "to": [
@@ -47,12 +39,8 @@
           "from": {
             "key_code": "k",
             "modifiers": {
-              "mandatory": [
-                "right_command"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
+              "mandatory": ["right_command"],
+              "optional": ["caps_lock"]
             }
           },
           "to": [
@@ -66,12 +54,8 @@
           "from": {
             "key_code": "s",
             "modifiers": {
-              "mandatory": [
-                "right_command"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
+              "mandatory": ["right_command"],
+              "optional": ["caps_lock"]
             }
           },
           "to": [
@@ -85,12 +69,8 @@
           "from": {
             "key_code": "i",
             "modifiers": {
-              "mandatory": [
-                "right_command"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
+              "mandatory": ["right_command"],
+              "optional": ["caps_lock"]
             }
           },
           "to": [
@@ -104,17 +84,13 @@
           "from": {
             "key_code": "p",
             "modifiers": {
-              "mandatory": [
-                "right_command"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
+              "mandatory": ["right_command"],
+              "optional": ["caps_lock"]
             }
           },
           "to": [
             {
-              "shell_command": "open -a 'Postico.app'"
+              "shell_command": "open -a 'TablePlus.app'"
             }
           ]
         },
@@ -123,12 +99,8 @@
           "from": {
             "key_code": "n",
             "modifiers": {
-              "mandatory": [
-                "right_command"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
+              "mandatory": ["right_command"],
+              "optional": ["caps_lock"]
             }
           },
           "to": [
@@ -142,12 +114,8 @@
           "from": {
             "key_code": "m",
             "modifiers": {
-              "mandatory": [
-                "right_command"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
+              "mandatory": ["right_command"],
+              "optional": ["caps_lock"]
             }
           },
           "to": [
