@@ -8,6 +8,7 @@ treesitter.setup({
 	highlight = {
 		enable = true,
 		additional_vim_regex_highlighting = false,
+		disable = { "lua" },
 	},
 	-- enable indentation
 	indent = { enable = true },
@@ -25,9 +26,6 @@ treesitter.setup({
 		"css",
 		"scss",
 		"markdown",
-		"bash",
-		"lua",
-		"vim",
 		"vue",
 		"dockerfile",
 		"gitignore",
