@@ -14,11 +14,12 @@ null_ls.setup({
 	sources = {
 		--  to disable file types use
 		--  'formatting.prettier.with({disabled_filetypes: {}})' (see null-ls docs)
-		formatting.prettier.with({
-			condition = function(utils)
-				return utils.root_has_file(".prettierrc.js")
-			end,
-		}),
+		formatting.prettier,
+		-- formatting.prettier.with({
+		-- 	condition = function(utils)
+		-- 		return utils.root_has_file(".prettierrc.js")
+		-- 	end,
+		-- }),
 		formatting.eslint_d, -- js/ts formatter
 		formatting.stylua, -- lua formatter
 		diagnostics.eslint_d.with({ -- js/ts linter

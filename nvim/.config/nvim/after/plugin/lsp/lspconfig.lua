@@ -8,6 +8,12 @@ if not cmp_nvim_lsp_status then
 	return
 end
 
+-- import typescript plugin safely
+local typescript_setup, typescript = pcall(require, "typescript")
+if not typescript_setup then
+	return
+end
+
 local servers = require("ikovac.lsp.servers")
 
 local keymap = vim.keymap
@@ -43,3 +49,10 @@ for _, server in ipairs(servers) do
 	end
 	lspconfig[server].setup(opts)
 end
+
+typescript.setup({
+	server = {
+		capabilities = capabilities,
+		on_attach = on_attach,
+	},
+})

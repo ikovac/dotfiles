@@ -4,7 +4,8 @@ return {
 	"html",
 	"cssls",
 	"tailwindcss",
-	"sumneko_lua",
+	"lua_ls",
 	"volar",
+	"vuels",
 	"rust_analyzer",
 }
