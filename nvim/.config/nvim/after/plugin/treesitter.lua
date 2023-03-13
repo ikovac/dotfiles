@@ -25,6 +25,7 @@ treesitter.setup({
 		"css",
 		"scss",
 		"markdown",
+		"markdown_inline",
 		"vue",
 		"dockerfile",
 		"gitignore",

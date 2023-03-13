@@ -17,3 +17,8 @@ keymap.set("n", "<C-d>", "<C-d>zz")
 keymap.set("n", "<C-u>", "<C-u>zz")
 keymap.set("n", "n", "nzzzv")
 keymap.set("n", "N", "Nzzzv")
+
+-- Quicklist
+keymap.set("n", "<leader>q", ":copen<CR>") -- open
+keymap.set("n", "<leader>qn", ":cnext<CR>") -- next result
+keymap.set("n", "<leader>qp", ":cprevious<CR>") -- prev result
