@@ -22,6 +22,21 @@
         {
           "type": "basic",
           "from": {
+            "key_code": "c",
+            "modifiers": {
+              "mandatory": ["right_command"],
+              "optional": ["caps_lock"]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open -a 'Visual Studio Code.app'"
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
             "key_code": "t",
             "modifiers": {
               "mandatory": ["right_command"],
@@ -75,7 +90,7 @@
           },
           "to": [
             {
-              "shell_command": "open -a 'Insomnia.app'"
+              "shell_command": "open -a 'Postman.app'"
             }
           ]
         },

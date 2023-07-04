@@ -1,5 +1,6 @@
 {
     "global": {
+        "ask_for_confirmation_before_quitting": true,
         "check_for_updates_on_startup": true,
         "show_in_menu_bar": true,
         "show_profile_name_in_menu_bar": false,
@@ -149,6 +150,25 @@
                             },
                             {
                                 "from": {
+                                    "key_code": "c",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_command"
+                                        ],
+                                        "optional": [
+                                            "caps_lock"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "shell_command": "open -a 'Visual Studio Code.app'"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
                                     "key_code": "t",
                                     "modifiers": {
                                         "mandatory": [
@@ -218,7 +238,7 @@
                                 },
                                 "to": [
                                     {
-                                        "shell_command": "open -a 'Insomnia.app'"
+                                        "shell_command": "open -a 'Postman.app'"
                                     }
                                 ],
                                 "type": "basic"
