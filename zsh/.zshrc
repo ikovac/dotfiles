@@ -114,3 +114,14 @@ set -o vi
 
 # Use starship shell prompt
 eval "$(starship init zsh)"
+
+# bun completions
+[ -s "/Users/ikovac/.bun/_bun" ] && source "/Users/ikovac/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+# tabtab source for packages
+# uninstall by removing these lines
+[[ -f ~/.config/tabtab/zsh/__tabtab.zsh ]] && . ~/.config/tabtab/zsh/__tabtab.zsh || true
