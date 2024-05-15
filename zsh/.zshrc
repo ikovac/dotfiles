@@ -105,3 +105,7 @@ set -o vi
 
 # Use starship for prompt
 eval "$(starship init zsh)"
+
+# fnm
+export PATH="/Users/ivo/Library/Application Support/fnm:$PATH"
+eval "`fnm env`"
