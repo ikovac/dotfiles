@@ -1,3 +1,7 @@
 karabiner/.config/karabiner/automatic_backups
 # Ignore packer plugin folder
 nvim/.config/nvim/plugin
+# Ignore orbstack files
+bin/.local/bin/docker*
+bin/.local/bin/kubectl
+bin/.local/bin/orb*
