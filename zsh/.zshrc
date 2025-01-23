@@ -1,6 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
-
+  
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
@@ -109,3 +109,31 @@ eval "$(starship init zsh)"
 # fnm
 export PATH="/Users/ivo/Library/Application Support/fnm:$PATH"
 eval "`fnm env`"
+
+# fnm
+FNM_PATH="/Users/ikovacevic/Library/Application Support/fnm"
+if [ -d "$FNM_PATH" ]; then
+  export PATH="/Users/ikovacevic/Library/Application Support/fnm:$PATH"
+  eval "`fnm env`"
+fi
+
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /opt/homebrew/bin/terraform terraform
+
+aws-login() {
+  export AWS_PROFILE=$(aws configure list-profiles | grep -v default | sort | fzf)
+  aws sso login
+}
+
+aws-sts() {
+  role_arn=$(aws iam list-roles --output json --query "Roles[?AssumeRolePolicyDocument.Statement[?Effect=='Allow'&&Principal.AWS&&contains(Principal.AWS,'$(aws sts get-caller-identity --query Arn --output text)')]].Arn" | jq -r '.[]' | fzf)
+  creds=$(aws sts assume-role --output json --role-arn $role_arn --role-session-name "local-dev")
+  export AWS_ACCESS_KEY_ID=$(echo $creds | jq -r '.Credentials.AccessKeyId')
+  export AWS_SECRET_ACCESS_KEY=$(echo $creds | jq -r '.Credentials.SecretAccessKey')
+  export AWS_SESSION_TOKEN=$(echo $creds | jq -r '.Credentials.SessionToken')
+  echo $creds | jq
+}
+
+aws-clear() {
+  unset AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY AWS_SESSION_TOKEN
+}
