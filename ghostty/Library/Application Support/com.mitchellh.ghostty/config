@@ -1,1 +1,3 @@
 theme = "nord"
+font-size="18"
+window-save-state = always
